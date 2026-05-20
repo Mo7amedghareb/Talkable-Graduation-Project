@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title> صفحة اجتماع الشخص الطبيعي </title>
+</head>
+<body>
+    <div class="page">
+             <!-- السايد بارر -->
+                    <div class="sidenav">
+                <div class="sidenav-logo">
+                <img src="assets/img/part left.jpeg" alt="">
+                </div>
+                 <div class="sidenav-a">
+                <a href="home-page.html">
+                <img src="assets/img/Vector-home-page.png" alt="">
+                <span>الصفجه الرائسية</span>
+            </a>
+            <a href="user-type.html">
+                    <img src="assets/img/Vector-meeting.png" alt="">
+
+                    <span>اجتماع</span>
+            </a>
+            <a href="choos-translation.html">
+                <img src="assets/img/Vector-translation.png" alt="">    
+                <span> الترجمه</span>
+            </a>
+            <a href="Courses.html">
+                <img src="assets/img/Vector-courses.png" alt="">
+                <span>الكورسات </span>
+            </a>
+            <a href="#contact">
+                <img src="assets/img/Vector-camira.png" alt="">
+                <span>  فحص بالكاميرا</span>
+            </a>
+            <a href="#contact">
+                <img src="assets/img/Vector-tran-pdf.png" alt="">
+                <span> ترجمهpdf</span>
+            </a>
+            <a href="page-account.html">
+                <img src="assets/img/Vector-profilr.png" alt="">
+                <span>  حسابي</span>
+            </a>
+            
+            </div>
+            </div>
+        <div class="main-new">
+                  <div class="main-new-header">
+                   <div class="section back-btn">
+                        <button id="button1"><span>عودة ></span></button>
+                    </div>
+                    
+                   <div class="section title">
+                        <h3>Talkable</h3>
+                    </div>
+                    <div class="room-pill" id="roomPill" hidden>
+  <span class="room-label">كود الغرفة:</span>
+  <span class="room-code" id="roomCode">---</span>
+  <button class="room-btn" id="copyRoomBtn" type="button">نسخ</button>
+  <button class="room-btn" id="copyRoomLinkBtn" type="button">نسخ الرابط</button>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+                   
+                     <!-- <a href="" class="meeting-icon">
+                        
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+                        
+                     </a>  -->
+                     <div class="section-end-btn">
+                <button id="endBtnTop" class="ending-but"><span>انهاء</span></button>                           </div>
+            </div>
+
+            
+
+
+<!-- Upload Section -->
+<section class="upload-section">
+  <!-- Remote (هيشتغل لاحقًا مع WebRTC) -->
+  <div class="card video-card" id="remoteCard">
+    <video id="localVideo" autoplay playsinline muted></video>
+   
+  </div>
+
+  <!-- Local (الكاميرا هتفتح هنا) -->
+  <div class="card video-card" id="localCard">
+    <video id="remoteVideo" autoplay playsinline></video>
+  
+  </div>
+</section>
+
+<nav class="bottom-nav">
+  <button id="btnChat" class="nav-btn" type="button">💬</button>
+  <button id="btnCaptions" class="nav-btn" type="button">🔤</button>
+  <button id="btnSwitch" class="nav-btn" type="button">🔄</button>
+
+  <button id="btnEndBottom" class="nav-btn danger" type="button">⛔</button>
+
+  <button id="btnCam" class="nav-btn" type="button">📷</button>
+  <button id="btnMic" class="nav-btn" type="button">🎤</button>
+</nav>
+
+        </div>  
+        <script src="assets/js/meeting-2.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+        <script src="assets/js/call-signalr.js" defer></script>
+</body>
+</html>

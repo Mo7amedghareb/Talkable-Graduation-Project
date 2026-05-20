@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f3f0fb;
+    width: 100%;
+}
+
+/* ✅ Navbar */
+.navbar {
+    background: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* اللوجو */
+.logo {
+    width: 240px;
+}
+
+/* اللينكات */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links li {
+    cursor: pointer;
+    color: #5b3cc4;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* العنصر النشط */
+.nav-links .active {
+    background: #e6e0ff;
+    border-bottom: 3px solid #5b3cc4;
+}
+
+/* الصورة الشخصية */
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #5b3cc4;
+    object-fit: cover;
+}
+
+
+
+.meeting-page {
+  padding: 60px 80px;
+  background-image: url("../img/backgroung.jpeg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* ✅ Header */
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: -20px;
+}
+
+.meeting-header h1 {
+  font-size: 40px;
+}
+
+.back-btn {
+  background: #6c6c7c;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  i{
+    margin-right: 10px;
+  }
+}
+
+.end-btn {
+  background: #ff3b30;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ✅ Video Section */
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.video-card {
+  flex: 1;
+  height: 250px;
+  background: #ddd;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.video-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* الفيديو ياخد نفس شكل الكارد */
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* النص فوق الفيديو */
+.video-label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.placeholder {
+  text-align: center;
+}
+
+.placeholder p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* ✅ Character */
+.character {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.character img {
+  width: 200px;
+  border: 8px solid #624ecc;
+  border-radius: 50%;
+}
+
+/* ✅ Bottom Bar */
+.bottom-bar {
+  background: #1f1f1f;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  padding: 0 40px;
+}
+
+
+
+
+/* ✅ Footer */
+.footer {
+    background: #f4f4f6;
+    padding: 70px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* ✅ Right Brand Section */
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-brand h2 {
+    color: #5b3cc4;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.footer-brand p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.footer-brand span {
+    color: #999;
+    font-size: 14px;
+}
+
+/* ✅ Links Section */
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.column a {
+    display: block;
+    text-decoration: underline;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.column a:hover {
+    color: #5b3cc4;
+}

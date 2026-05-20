@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>user-type</title>
+</head>
+<body>
+      <div class="page">
+            <!-- السايد بارر -->
+                    <div class="sidenav">
+                <div class="sidenav-logo">
+                    
+
+                <img src="assets/img/part left.jpeg" alt="">
+                </div>
+                <div class="sidenav-a">
+                <a href="home-page.html">
+               
+            </a>
+           
+                </div>
+                 <div class="sidenav-a">
+                <a href="home-page.html">
+                <img src="assets/img/Vector-home-page.png" alt="">
+                <span>الصفجه الرائسية</span>
+            </a>
+            <a href="user-type.html">
+                    <img src="assets/img/Vector-meeting.png" alt="">
+
+                    <span>اجتماع</span>
+            </a>
+            <a href="choos-translation.html">
+                <img src="assets/img/Vector-translation.png" alt="">    
+                <span> الترجمه</span>
+            </a>
+            <a href="Courses.html">
+                <img src="assets/img/Vector-courses.png" alt="">
+                <span>الكورسات </span>
+            </a>
+            <a href="#contact">
+                <img src="assets/img/Vector-camira.png" alt="">
+                <span>  فحص بالكاميرا</span>
+            </a>
+            <a href="#contact">
+                <img src="assets/img/Vector-tran-pdf.png" alt="">
+                <span> ترجمهpdf</span>
+            </a>
+            <a href="page-account.html">
+                <img src="assets/img/Vector-profilr.png" alt="">
+                <span>  حسابي</span>
+            </a>
+            
+            </div>
+            </div>
+                <div class="main-new">
+                        <div class="main-new-header">
+                    <div class="back-btn">
+                    <button id="button1">عودة ></button>
+                </div>
+                    <h3> اعدادات المقابلة</h3>
+                     <a href="">
+
+
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+
+                        
+                     </a>
+            </div>
+                <div class="main-settings">
+                    <div class="open-camira">
+
+                                   
+
+                                    <img src="assets/img/vector-camira-black.png" alt="">
+
+                                    <span>تفعيل الاهتزاز</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <a href="">
+
+
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+
+                        
+                     </a>
+                            
+                    </div>
+                    <div class="open-micrphone">
+                          
+
+                                    
+
+                                    <img src="assets/img/Vector-microphon-black.png" alt="">
+
+                                    <span>تفعيل الاهتزاز</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                     <a href="">
+
+
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+
+                        
+                     </a>
+                            
+                    </div>
+                </div>
+                 <div class="main-user-type-titel">
+                    <span>  نوع المستخدم:
+                        <a href="">
+
+
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+
+                        
+                     </a>
+                    </span>
+                    </div>
+                <div class="main-user-type">
+                   
+                <div class="main-user-type-radio">
+                <div class="normal">
+                    <input type="radio" id="normal" name="user" value="normal">
+                <label for="normal" class="main-user-type-radio-circle">
+
+                    
+
+                    <img src="assets/img/img-in-radio.png" alt="">
+
+                    <span>شخص طبيعي</span>
+                </label>
+                </div>
+
+                <div class="som">
+                 <input type="radio" id="deaf" name="user" value="deaf">
+                <label for="deaf" class="main-user-type-radio-circle">
+
+                   
+
+                    <img src="assets/img/img-in-radio2.png" alt="">
+
+                    <span>صم وبكم</span>
+                </label>
+                </div>
+                </div>
+                </div>
+                      <!-- ... نفس صفحتك لحد main-user-type ... -->
+
+                    <!-- ===== غرفة المكالمة ===== -->
+                    <div class="room-box">
+                    <label for="roomInput">كود الغرفة:</label>
+                    <input id="roomInput" type="text" placeholder="اضغط إنشاء غرفة أو اكتب كود للانضمام">
+                    <button id="copyRoomBtn" type="button">نسخ</button>
+                    </div>
+
+                    <div class="room-actions">
+                    <button id="createRoomBtn" type="button">إنشاء غرفة</button>
+                    <button id="joinRoomBtn" type="button">انضمام</button>
+                    </div>
+
+                    <p id="roomStatus" class="room-status"></p>
+
+                    <div class="main-buottm">
+                    <button id="startMeetingBtn" type="button" disabled>بدأ الاجتماع</button>
+                    <a href="#" onclick="event.preventDefault()">
+                        <img src="assets/img/q-m.png" alt="">
+                        <img src="assets/img/hand.png" alt="">
+                    </a>
+                    </div>
+
+
+
+
+                <div class="main-buottm">
+                   <!-- <button id="startMeetingBtn" type="button">بدأ الاجتماع</button> -->
+                     <a href="">
+
+
+                      <img src="assets/img/q-m.png" alt="">
+                      <img src="assets/img/hand.png" alt=""> 
+
+                        
+                     </a>
+                </div>
+              
+               
+        </div>
+      </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script src="assets/js/user-type.js" defer></script>
+</body>
+</html>
